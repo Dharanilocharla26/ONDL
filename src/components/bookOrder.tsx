@@ -73,7 +73,7 @@ export default function BookOrder() {
     return (
         <Box maxW="480px" mx="auto" bg="white">
             <HStack justify="space-between" mb={4} mt={3}>
-                <Icon as={IoIosArrowBack} boxSize={5} />
+                <Icon as={IoIosArrowBack} boxSize={6} ml={3} />
                 <Heading fontSize="22px">Book Order</Heading>
                 <Box boxSize={5} />
             </HStack>
