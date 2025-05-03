@@ -30,13 +30,11 @@ import type { TouchEvent } from "react";
 
 export default function BookOrder() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    // Use any type for the ref to avoid TypeScript errors with Chakra UI's finalFocusRef
     const btnRef = useRef<any>(null);
-    // For tracking swipe gesture
     const [touchStart, setTouchStart] = useState<number | null>(null);
     const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
-    // Minimum swipe distance (in px)
+
     const minSwipeDistance = 50;
 
     const onTouchStart = (e: TouchEvent<HTMLDivElement>) => {
@@ -246,8 +244,6 @@ export default function BookOrder() {
                     Proceed
                 </Button>
             </Flex>
-
-            {/* Fare Breakup Drawer */}
             <Drawer
                 isOpen={isOpen}
                 placement="bottom"
